@@ -41,6 +41,11 @@
   };
 
 
+
+
+
+
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -78,6 +83,14 @@
     #  thunderbird
     ];
   };
+
+ services = {
+      qemuGuest.enable = true;
+      spice-vdagentd.enable = true;
+      spice-webdavd.enable = true;
+      spice-autorandr.enable = true;
+    };
+
 
   # Enable programs Expand config later
   programs = { 
